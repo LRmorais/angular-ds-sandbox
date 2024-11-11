@@ -1,0 +1,13 @@
+:host {
+  --mat-toolbar-standard-height: 94px;
+  --padding-horizontal-grid-interno: 80px;
+  --padding-vertical-grid-interno: 24px;
+}
+
+.cabecalho-layout {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: var(--mat-toolbar-standard-height);
+  padding-right: calc(var(--padding-horizontal-grid-interno) + 1rem);
+}
