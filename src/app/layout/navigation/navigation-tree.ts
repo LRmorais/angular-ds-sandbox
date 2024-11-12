@@ -10,7 +10,7 @@ export const ItemsMenu: MenuLateral[] = [
     label: 'Componentes',
     icon: 'settings',
     children: [
-      { label: 'Inputs - Signal', route: '/inputs-signal' },
+      { label: 'Inputs', route: '/inputs' },
     ],
   },
 ];
