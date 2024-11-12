@@ -1,1 +1,33 @@
-<p>menu-usuario works!</p>
+<div class="container-menu-usuario">
+  <button [matMenuTriggerFor]="userActions">
+    <div class="container-flex-alinhado">
+      <div class="icone-container" id="no-img-container">
+        <mat-icon>person</mat-icon>
+      </div>
+
+      <div class="container-info-usuario">
+        <span class="texto-md">
+          <strong>Usuário</strong>
+        </span>
+        <span class="texto-sm">Perfil Usuário</span>
+      </div>
+      <mat-icon class="icone-branco">arrow_drop_down</mat-icon>
+    </div>
+  </button>
+
+  <mat-menu [xPosition]="'before'" #userActions="matMenu">
+    <button mat-menu-item>
+      <span class="container-info-logado">
+        <span>Logado como: </span>
+        <span class="margem-top texto-md fonte-media">Email</span>
+      </span>
+    </button>
+
+    <mat-divider class="margem-vertical"></mat-divider>
+
+    <button mat-menu-item (click)="signOut()">
+      <mat-icon>logout</mat-icon>
+      <span>Sair</span>
+    </button>
+  </mat-menu>
+</div>

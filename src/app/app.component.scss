@@ -1,0 +1,53 @@
+button {
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.grid {
+  display: grid;
+}
+
+.gap {
+  gap: 4px 16px;
+}
+
+@mixin gerar-grid-colunas($max-colunas: 12) {
+  @for $i from 1 through $max-colunas {
+    .grid-#{$i}-colunas {
+      grid-template-columns: repeat(#{$i}, 1fr);
+    }
+  }
+}
+
+@mixin gerar-tamanho-coluna($max-span: 12) {
+  @for $i from 1 through $max-span {
+    .coluna-tamanho-#{$i} {
+      grid-column: span #{$i} / span #{$i};
+    }
+  }
+}
+
+@include gerar-grid-colunas();
+@include gerar-tamanho-coluna();
+
+.header-secao {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.subgrid-colunas {
+  @extend .grid;
+  grid-template-columns: subgrid;
+}
