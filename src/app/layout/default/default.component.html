@@ -5,3 +5,44 @@
   
   <app-menu-usuario></app-menu-usuario>
 </mat-toolbar>
+
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav
+    #sidenav
+    mode="side"
+    opened
+    class="sidenav"
+    [fixedTopGap]="1"
+    [fixedBottomGap]="1">
+    <div class="header-menu-container">
+      <mat-toolbar class="custom-toolbar-bg">
+        <span>Menu</span>
+      </mat-toolbar>
+      <app-menu-lateral></app-menu-lateral>
+    </div>
+
+    <div class="menu-lateral-footer">
+      <div class="container-logo">
+        <div class="brasao-container">
+          <img
+            class="brasao-imagem"
+            src="assets/imagens/logos/nasdaq.png"
+            alt="Logo da nasdaq" />
+        </div>
+
+        <div class="texto-container">
+          <span class="titulo">NASDAQ</span>
+          <span class="subtitulo">BOLSA | DOLARES</span>
+        </div>
+      </div>
+
+      <div class="versao-container">
+        <span class="versao">Versão: 1.0.0</span>
+      </div>
+    </div>
+  </mat-sidenav>
+
+  <mat-sidenav-content class="application-content">
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
