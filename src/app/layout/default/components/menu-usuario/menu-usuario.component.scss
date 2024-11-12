@@ -1,10 +1,11 @@
-.container-menu-usuario{
-  background-color: var(--primary-color);
-}
-
 .container-flex-alinhado {
   display: flex;
   align-items: center;
+  background-color: var(--header-bar-temporary-color);
+}
+
+.container-menu-usuario{
+  background-color: var(--header-bar-temporary-color);
 }
 
 .icone-container {
@@ -23,7 +24,7 @@
 .container-info-usuario {
   display: flex;
   flex-direction: column;
-  color: var(--primary-color);
+  color: var(--header-contrast-color);
 }
 
 .texto-md {
@@ -54,11 +55,10 @@
 }
 
 div#no-img-container {
-  background: #e0e0e0;
-  color: var(--primary-color);
+  background-color: var(--header-contrast-color);
+  color: var(--header-bar-temporary-color);
 }
 
 .icone-branco {
-  color: var(--primary-color);
-  
+  color: var(--header-contrast-color);
 }

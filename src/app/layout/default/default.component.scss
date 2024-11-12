@@ -25,8 +25,8 @@
   align-items: center;
   justify-content: center;
   width: 312px;
-  background: var(--primary-color);
-  color: var(--primary-color);
+  background: var(--side-bar-color);
+  color: var(--side-bar-text-color);
   overflow: hidden;
 }
 
@@ -41,15 +41,15 @@
 }
 
 .application-content {
-  background-color: #FFFFFF;
+  background-color: var(--container-page-background);
   padding: var(--padding-vertical-grid-interno)
     var(--padding-horizontal-grid-interno);
   height: calc(100% - (var(--padding-vertical-grid-interno) * 2));
 }
 
 .mat-toolbar.custom-toolbar-bg {
-  background: var(--primary-color) !important;
-  color: var(text-color-secondary) !important;
+  background: var(--side-bar-color);
+  color: var(--side-bar-text-color);
   padding: 1rem !important;
   font-size: 20px;
   font-weight: 700;
@@ -66,7 +66,7 @@
   justify-content: center;
   width: 100%;
   height: auto;
-  color: white;
+  color: var(--side-bar-text-color);
   gap: 1rem;
 }
 

@@ -12,7 +12,7 @@
   padding: var(--padding-itens-menu);
   text-align: left;
   cursor: pointer;
-  color: var(--text-color-secondary);
+  color: var(--side-bar-text-color);
   font-size: 1rem;
   transition: background-color 0.3s ease;
   height: 56px;
@@ -45,16 +45,16 @@ a[mat-list-item]:hover {
 }
 
 a[mat-list-item] {
-  color: var(--text-color-secondary);
+  color: var(--side-bar-text-color);
   padding: var(--padding-itens-menu);
   text-decoration: none;
 
   & .mat-mdc-list-item-icon {
     margin-left: 0 !important;
-    color: var(--sefa-text-on-primary);
+    color: var(--side-bar-text-color);
   }
 
   & .mdc-list-item__primary-text {
-    color: var(--sefa-text-on-primary);
+    color: var(--side-bar-text-color);
   }
 }
