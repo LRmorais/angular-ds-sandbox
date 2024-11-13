@@ -31,7 +31,7 @@ export class MenuUsuarioComponent implements OnInit, OnDestroy {
   }
 
   public ngOnInit(): void {
-    throw new Error('Method not implemented.');
+    console.log('MenuUsuarioComponent montado');
   }
 
   public ngOnDestroy(): void {
