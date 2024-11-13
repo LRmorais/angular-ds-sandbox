@@ -1,5 +1,5 @@
-<input-antigo [label]="inputAntigoLabel" (botaoClicado)="imprimeValor($event)"></input-antigo>
+<input-antigo [label]="inputAntigoLabel" (botaoClicado)="imprimeValor($event)" [botaoDesativado]="false"></input-antigo>
 
 <div class="separator"></div>
 
-<input-signal [label]="inputSignalLabel"></input-signal>
+<input-signal [label]="inputSignalLabel" (botaoClicado)="imprimeValor($event)" [botaoDesativado]="false"></input-signal>

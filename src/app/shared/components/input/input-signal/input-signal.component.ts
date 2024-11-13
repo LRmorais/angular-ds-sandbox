@@ -1,4 +1,4 @@
-import {Component, input} from '@angular/core';
+import {Component, input, output} from '@angular/core';
 
 @Component({
   selector: 'input-signal',
@@ -14,4 +14,6 @@ export class InputSignalComponent {
    transform: (valor: string | boolean) =>
       typeof valor === 'string' ? valor === '' || valor === 'true' : valor
  });
+
+ botaoClicado = output<string>();
 }

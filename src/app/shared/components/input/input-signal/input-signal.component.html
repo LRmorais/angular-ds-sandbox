@@ -1,4 +1,4 @@
 <span>
   {{ label() }}
 </span>
-<button [disabled]="botaoDesativado()">Clique aqui</button>
+<button [disabled]="botaoDesativado()" (click)="botaoClicado.emit('signal')">Clique aqui</button>
