@@ -1,0 +1,7 @@
+@for (user of (users$ | async); track $index){
+  @if($index >= 5 && $index < 10){
+    <span>Nome {{$index}}: {{user.username}}</span> <br/>
+  }
+}
+<br/>
+<app-subscribe></app-subscribe>

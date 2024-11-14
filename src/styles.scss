@@ -17,4 +17,10 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   --header-contrast-color: #EEF7FF;
 
   --container-page-background: #041434;
+  --text-page-color: #EEF7FF;
+
+}
+
+span {
+  color: var(--text-page-color);
 }

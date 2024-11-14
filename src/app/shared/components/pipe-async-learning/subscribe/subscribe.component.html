@@ -1,0 +1,5 @@
+@for(user of users; track $index){
+  @if($index < 5){
+    <span>Nome {{$index}}: {{user.username}}</span> <br/>
+  }
+}

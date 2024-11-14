@@ -1,8 +1,9 @@
-<input-antigo [label]="inputAntigoLabel" (botaoClicado)="imprimeValor($event)" [botaoDesativado]="false"></input-antigo>
+ <input-antigo [label]="inputAntigoLabel" (botaoClicado)="imprimeValor($event)" [botaoDesativado]="false"></input-antigo>
 
-<div class="separator"></div>
+  <div class="separator"></div>
 
-<input-signal [label]="inputSignalLabel" (botaoClicado)="imprimeValor($event)" [botaoDesativado]="false"></input-signal>
+  <input-signal [label]="inputSignalLabel" (botaoClicado)="imprimeValor($event)" [botaoDesativado]="false"></input-signal>
+
 
 <div class="separator"></div>
 
@@ -11,3 +12,7 @@
 </div>
 
 <app-host-learning class="input" isPrimary="true"></app-host-learning>
+
+<div class="separator"></div>
+
+<app-pipe-async-learning ></app-pipe-async-learning>
