@@ -1,0 +1,12 @@
+:host{
+  display: block;
+
+  &.green {
+    color: greenyellow;
+
+    input{
+      background-color: aquamarine;
+    }
+  }
+}
+
